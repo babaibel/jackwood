@@ -152,10 +152,10 @@ img{
 }
 
 .wrap{
-  width: 1200px;
+  width: 1280px;
   margin: 0 auto;
   position: relative;
-  padding: 0 10px;
+  padding: 0 50px;
 }
 
 .header{
@@ -343,7 +343,7 @@ img{
 	&-wr{
 		margin-bottom: 65px;
 		.wrap{
-			padding: 0 70px;
+			padding: 0 110px;
 		}
 	}
 	margin: 0 -15px;
@@ -372,7 +372,7 @@ img{
 	&-wr{
 		padding: 0 0 35px;
 		.wrap{
-			padding: 0 70px;
+			padding: 0 110px;
 		}
 	}
 	margin: 0 0 50px;
@@ -712,7 +712,9 @@ img{
 	width: auto;
 	font-family: @fontl;
 	color: #000!important;
-	font-size: 50px;
+	font-size: 76px;
+	height: 50px;
+	line-height: 54px;
 }
 
 .mfp-arrow{
@@ -721,7 +723,7 @@ img{
 	top: 50%;
 	transform: translate(0, -50%);
 	display: inline-block;
-	width: auto;
+	width: 55px;
 	height: auto;
 	&:after{
 		top: auto;
@@ -770,4 +772,18 @@ img{
 }
 .error:focus {
   border-color: transparent!important;
+}
+
+@media screen and (max-device-width: 1024px){
+	.wrap{
+		padding: 0 70px;
+	}
+	.portfolio__item{
+		width: 25%;
+	}
+	.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close{
+		font-size: 200px;
+		height: 130px;
+		line-height: 138px;
+	}
 }
